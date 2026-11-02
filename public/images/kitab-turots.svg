@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-turots" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532D" />
+      <stop offset="60%" stop-color="#0B2E22" />
+      <stop offset="100%" stop-color="#051812" />
+    </linearGradient>
+    <radialGradient id="lamp-light" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#DFCA95" stop-opacity="0.45" />
+      <stop offset="70%" stop-color="#C6A15B" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0B2E22" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg-turots)" />
+  <circle cx="400" cy="260" r="280" fill="url(#lamp-light)" />
+
+  <!-- Classical Islamic Arch -->
+  <g transform="translate(400, 240)" stroke="#C6A15B" fill="none">
+    <path d="M-220 220 L-220 0 C-220 -160 0 -220 0 -220 C0 -220 220 -160 220 0 L220 220" stroke-width="3" opacity="0.75" />
+    <path d="M-200 220 L-200 10 C-200 -140 0 -200 0 -200 C0 -200 200 -140 200 10 L200 220" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5" />
+  </g>
+
+  <!-- Hanging Lantern (Fanous) -->
+  <g transform="translate(400, 110)">
+    <line x1="0" y1="-80" x2="0" y2="0" stroke="#C6A15B" stroke-width="2" />
+    <polygon points="0,-10 -15,10 15,10" fill="#C6A15B" />
+    <path d="M-20 10 L-30 40 L-15 70 L15 70 L30 40 L20 10 Z" fill="#DFCA95" opacity="0.8" stroke="#C6A15B" stroke-width="2" />
+    <circle cx="0" cy="40" r="10" fill="#FFF" />
+    <polygon points="-15,70 0,90 15,70" fill="#C6A15B" />
+  </g>
+
+  <!-- Open Kitab Kuning on Rehal -->
+  <g transform="translate(400, 360)">
+    <!-- Wooden Stand (Rehal) -->
+    <path d="M-100 110 L0 25 L100 110" stroke="#C6A15B" stroke-width="6" stroke-linecap="round" fill="none" />
+    <path d="M-100 25 L0 110 L100 25" stroke="#C6A15B" stroke-width="6" stroke-linecap="round" fill="none" />
+    <!-- Book Pages -->
+    <path d="M-120 -30 Q-60 5 0 -25 Q60 5 120 -30 L115 50 Q60 70 0 50 Q-60 70 -115 50 Z" fill="#F8F6EF" stroke="#C6A15B" stroke-width="2.5" />
+    <line x1="0" y1="-25" x2="0" y2="50" stroke="#0B2E22" stroke-width="2.5" />
+    <!-- Text Lines -->
+    <line x1="-95" y1="-5" x2="-20" y2="-5" stroke="#14532D" stroke-width="2" opacity="0.7" />
+    <line x1="-95" y1="12" x2="-20" y2="12" stroke="#14532D" stroke-width="2" opacity="0.7" />
+    <line x1="-95" y1="28" x2="-40" y2="28" stroke="#14532D" stroke-width="2" opacity="0.7" />
+    <line x1="20" y1="-5" x2="95" y2="-5" stroke="#14532D" stroke-width="2" opacity="0.7" />
+    <line x1="20" y1="12" x2="95" y2="12" stroke="#14532D" stroke-width="2" opacity="0.7" />
+    <line x1="40" y1="28" x2="95" y2="28" stroke="#14532D" stroke-width="2" opacity="0.7" />
+  </g>
+
+  <text x="400" y="530" text-anchor="middle" font-family="'Lora', serif" font-size="22" font-weight="bold" fill="#DFCA95" letter-spacing="2">
+    PENGAJIAN KITAB TUROTS SALAF
+  </text>
+  <text x="400" y="560" text-anchor="middle" font-family="'Lora', serif" font-size="13" fill="#C6A15B" letter-spacing="3">
+    METODE SOROGAN &amp; BANDONGAN BERKAH
+  </text>
+</svg>

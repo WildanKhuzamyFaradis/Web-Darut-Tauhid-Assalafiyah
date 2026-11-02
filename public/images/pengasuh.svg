@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-kyai" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2E22" />
+      <stop offset="60%" stop-color="#14532D" />
+      <stop offset="100%" stop-color="#071F17" />
+    </linearGradient>
+    <radialGradient id="aura-gold" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#DFCA95" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#C6A15B" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0B2E22" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg-kyai)" />
+  <circle cx="400" cy="340" r="320" fill="url(#aura-gold)" />
+
+  <!-- Kyai / Pengasuh Silhouette (Serban, Sorban pundak, Jubah) -->
+  <g transform="translate(400, 390)" stroke="#C6A15B" stroke-width="2.5">
+    <!-- Serban / Imamah (Turban headwear with trailing tail) -->
+    <ellipse cx="0" cy="-210" rx="55" ry="32" fill="#F8F6EF" stroke="#C6A15B" />
+    <path d="M-50 -205 Q0 -235 50 -205 Q0 -185 -50 -205 Z" fill="#DFCA95" opacity="0.7" />
+    <path d="M25 -190 Q55 -150 45 -80" fill="none" stroke="#F8F6EF" stroke-width="8" stroke-linecap="round" />
+    <!-- Face Silhouette Profile with Beard -->
+    <path d="M-30 -185 Q0 -195 30 -185 Q35 -140 25 -100 Q0 -60 -25 -100 Z" fill="#DFCA95" stroke="none" />
+    <!-- White Beard (Jenggot Salaf) -->
+    <path d="M-25 -110 Q0 -60 25 -110 Q0 -40 -25 -110 Z" fill="#F8F6EF" stroke="#DFCA95" stroke-width="1" />
+
+    <!-- Sorban Hijau di Pundak (Green Shawl / Rida') -->
+    <path d="M-110 50 Q-80 -80 -45 -110 Q0 -100 45 -110 Q80 -80 110 50 Q75 140 45 220 L-45 220 Q-75 140 -110 50 Z" fill="#0B2E22" stroke="#C6A15B" stroke-width="3" />
+    <!-- Inner White Thobe (Jubah Putih) -->
+    <path d="M-50 -100 L50 -100 L60 220 L-60 220 Z" fill="#F8F6EF" stroke="#C6A15B" stroke-width="2" />
+    <!-- Gold buttons on Jubah -->
+    <circle cx="0" cy="-60" r="3" fill="#C6A15B" />
+    <circle cx="0" cy="-30" r="3" fill="#C6A15B" />
+    <circle cx="0" cy="0" r="3" fill="#C6A15B" />
+    <circle cx="0" cy="30" r="3" fill="#C6A15B" />
+  </g>
+
+  <!-- Islamic Calligraphy Arch Framing -->
+  <path d="M120 720 L120 300 C120 100 400 40 400 40 C400 40 680 100 680 300 L680 720" stroke="#C6A15B" stroke-width="4" fill="none" opacity="0.85" />
+  <circle cx="400" cy="40" r="8" fill="#DFCA95" />
+
+  <text x="400" y="710" text-anchor="middle" font-family="'Lora', serif" font-size="24" font-weight="bold" fill="#DFCA95" letter-spacing="2">
+    PENGASUH PONDOK PESANTREN
+  </text>
+  <text x="400" y="745" text-anchor="middle" font-family="'Lora', serif" font-size="15" fill="#C6A15B" letter-spacing="3">
+    DEWAN MASYAYIKH &amp; ASATIDZ
+  </text>
+</svg>

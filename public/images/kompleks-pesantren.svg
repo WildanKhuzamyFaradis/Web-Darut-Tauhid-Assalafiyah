@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-kompleks" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051812" />
+      <stop offset="60%" stop-color="#0B2E22" />
+      <stop offset="100%" stop-color="#14532D" />
+    </linearGradient>
+    <radialGradient id="sky-glow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#DFCA95" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0B2E22" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg-kompleks)" />
+  <circle cx="400" cy="220" r="280" fill="url(#sky-glow)" />
+
+  <!-- Moon and Stars -->
+  <path d="M620 100 A25 25 0 1 1 620 145 A19 19 0 1 0 620 100 Z" fill="#DFCA95" />
+  <circle cx="560" cy="110" r="2.5" fill="#DFCA95" opacity="0.8" />
+  <circle cx="680" cy="130" r="2" fill="#DFCA95" opacity="0.8" />
+  <circle cx="200" cy="140" r="2" fill="#DFCA95" opacity="0.7" />
+
+  <!-- Pesantren Buildings Silhouette with Arches -->
+  <g transform="translate(400, 320)" stroke="#C6A15B" fill="#071F17">
+    <!-- Main Center Building & Large Dome -->
+    <rect x="-140" y="-30" width="280" height="150" stroke-width="2.5" />
+    <path d="M-110 -30 C-110 -150 0 -170 0 -170 C0 -170 110 -150 110 -30 Z" stroke-width="2.5" fill="#0B2E22" />
+    <!-- Crescent on Center Dome -->
+    <circle cx="0" cy="-195" r="7" fill="#DFCA95" stroke="none" />
+    <line x1="0" y1="-170" x2="0" y2="-190" stroke-width="2.5" />
+
+    <!-- Arched Windows in Center Building -->
+    <path d="M-80 50 L-80 15 C-80 -5 -40 -5 -40 15 L-40 50 Z" stroke-width="1.5" fill="#DFCA95" opacity="0.3" />
+    <path d="M-20 50 L-20 15 C-20 -5 20 -5 20 15 L20 50 Z" stroke-width="1.5" fill="#DFCA95" opacity="0.5" />
+    <path d="M40 50 L40 15 C40 -5 80 -5 80 15 L80 50 Z" stroke-width="1.5" fill="#DFCA95" opacity="0.3" />
+
+    <!-- Left Wing (Madrasah) -->
+    <rect x="-320" y="20" width="180" height="100" stroke-width="2" />
+    <path d="M-280 20 C-280 -40 -230 -50 -230 -50 C-230 -50 -180 -40 -180 20 Z" stroke-width="2" fill="#0B2E22" />
+    <!-- Left Minaret Tower -->
+    <rect x="-350" y="-120" width="30" height="240" stroke-width="2" />
+    <polygon points="-350,-120 -335,-160 -320,-120" fill="#DFCA95" />
+
+    <!-- Right Wing (Asrama) -->
+    <rect x="140" y="20" width="180" height="100" stroke-width="2" />
+    <path d="M180 20 C180 -40 230 -50 230 -50 C230 -50 280 -40 280 20 Z" stroke-width="2" fill="#0B2E22" />
+    <!-- Right Minaret Tower -->
+    <rect x="320" y="-120" width="30" height="240" stroke-width="2" />
+    <polygon points="320,-120 335,-160 350,-120" fill="#DFCA95" />
+  </g>
+
+  <!-- Islamic Geometry Base -->
+  <rect x="0" y="440" width="800" height="160" fill="#071F17" />
+  <line x1="0" y1="440" x2="800" y2="440" stroke="#C6A15B" stroke-width="3" />
+
+  <text x="400" y="525" text-anchor="middle" font-family="'Lora', serif" font-size="22" font-weight="bold" fill="#DFCA95" letter-spacing="2">
+    KOMPLEKS ASRAMA &amp; MASJID JAMI'
+  </text>
+  <text x="400" y="555" text-anchor="middle" font-family="'Lora', serif" font-size="13" fill="#C6A15B" letter-spacing="3">
+    LINGKUNGAN PENDIDIKAN SALAF BERKAH &amp; ASRI
+  </text>
+</svg>

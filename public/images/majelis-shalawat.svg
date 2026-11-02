@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-majelis" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2E22" />
+      <stop offset="50%" stop-color="#071F17" />
+      <stop offset="100%" stop-color="#04120D" />
+    </linearGradient>
+    <radialGradient id="stage-glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#DFCA95" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#C6A15B" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg-majelis)" />
+  <circle cx="400" cy="250" r="280" fill="url(#stage-glow)" />
+
+  <!-- Multiple Lanterns hanging -->
+  <g stroke="#C6A15B" fill="none">
+    <!-- Center Fanous -->
+    <line x1="400" y1="0" x2="400" y2="80" stroke-width="2" />
+    <polygon points="400,80 380,105 420,105" fill="#C6A15B" />
+    <path d="M375 105 L365 140 L380 170 L420 170 L435 140 L425 105 Z" fill="#DFCA95" opacity="0.85" stroke-width="2" />
+    <circle cx="400" cy="138" r="10" fill="#FFF" />
+    <polygon points="380,170 400,195 420,170" fill="#C6A15B" />
+
+    <!-- Left Fanous -->
+    <line x1="220" y1="0" x2="220" y2="120" stroke-width="1.5" />
+    <path d="M205 140 L195 165 L208 190 L232 190 L245 165 L235 140 Z" fill="#DFCA95" opacity="0.6" stroke-width="1.5" />
+
+    <!-- Right Fanous -->
+    <line x1="580" y1="0" x2="580" y2="120" stroke-width="1.5" />
+    <path d="M565 140 L555 165 L568 190 L592 190 L605 165 L595 140 Z" fill="#DFCA95" opacity="0.6" stroke-width="1.5" />
+  </g>
+
+  <!-- Rebana / Hadrah Drums -->
+  <g transform="translate(400, 370)">
+    <!-- Main Center Rebana -->
+    <ellipse cx="0" cy="0" rx="90" ry="40" fill="#F8F6EF" stroke="#C6A15B" stroke-width="3" />
+    <ellipse cx="0" cy="15" rx="90" ry="40" fill="none" stroke="#C6A15B" stroke-width="2" opacity="0.7" />
+    <!-- Golden Cymbals on edge -->
+    <circle cx="-75" cy="5" r="7" fill="#DFCA95" stroke="#C6A15B" stroke-width="1" />
+    <circle cx="0" cy="20" r="7" fill="#DFCA95" stroke="#C6A15B" stroke-width="1" />
+    <circle cx="75" cy="5" r="7" fill="#DFCA95" stroke="#C6A15B" stroke-width="1" />
+
+    <!-- Left Rebana -->
+    <ellipse cx="-160" cy="40" rx="65" ry="30" fill="#F8F6EF" stroke="#C6A15B" stroke-width="2" opacity="0.85" />
+    <!-- Right Rebana -->
+    <ellipse cx="160" cy="40" rx="65" ry="30" fill="#F8F6EF" stroke="#C6A15B" stroke-width="2" opacity="0.85" />
+  </g>
+
+  <text x="400" y="525" text-anchor="middle" font-family="'Lora', serif" font-size="22" font-weight="bold" fill="#DFCA95" letter-spacing="2">
+    GEMA MAJELIS SHALAWAT &amp; MAULID
+  </text>
+  <text x="400" y="555" text-anchor="middle" font-family="'Lora', serif" font-size="13" fill="#C6A15B" letter-spacing="3">
+    MAJELIS BURDAH &amp; SIMTUDDUROR SANTRI
+  </text>
+</svg>

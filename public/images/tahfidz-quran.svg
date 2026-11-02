@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-tahfidz" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071F17" />
+      <stop offset="50%" stop-color="#0B2E22" />
+      <stop offset="100%" stop-color="#14532D" />
+    </linearGradient>
+    <radialGradient id="quran-light" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#DFCA95" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#C6A15B" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#071F17" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg-tahfidz)" />
+  <circle cx="400" cy="270" r="260" fill="url(#quran-light)" />
+
+  <!-- 8-Pointed Islamic Star (Rub El Hizb) -->
+  <g transform="translate(400, 260) scale(1.6)" stroke="#C6A15B" stroke-width="2" fill="none">
+    <rect x="-60" y="-60" width="120" height="120" stroke="#C6A15B" stroke-width="2" fill="#0B2E22" opacity="0.7" />
+    <rect x="-60" y="-60" width="120" height="120" stroke="#C6A15B" stroke-width="2" transform="rotate(45)" fill="#0B2E22" opacity="0.7" />
+    <circle cx="0" cy="0" r="45" stroke="#DFCA95" stroke-width="2" />
+    <circle cx="0" cy="0" r="6" fill="#C6A15B" />
+  </g>
+
+  <!-- Open Mushaf -->
+  <g transform="translate(400, 270)">
+    <path d="M-130 -40 Q-60 0 0 -35 Q60 0 130 -40 L125 60 Q60 85 0 65 Q-60 85 -125 60 Z" fill="#F8F6EF" stroke="#C6A15B" stroke-width="3" />
+    <line x1="0" y1="-35" x2="0" y2="65" stroke="#0B2E22" stroke-width="3" />
+    <!-- Golden Border Lines on Mushaf Pages -->
+    <rect x="-115" y="-20" width="95" height="65" stroke="#C6A15B" stroke-width="1" fill="none" opacity="0.6" />
+    <rect x="20" y="-20" width="95" height="65" stroke="#C6A15B" stroke-width="1" fill="none" opacity="0.6" />
+  </g>
+
+  <!-- Tasbih Beads (Necklace) -->
+  <g transform="translate(400, 420)">
+    <path d="M-140 10 Q0 80 140 10" stroke="#C6A15B" stroke-width="2" fill="none" stroke-dasharray="2,12" stroke-linecap="round" />
+    <!-- Beads -->
+    <circle cx="-120" cy="20" r="6" fill="#DFCA95" />
+    <circle cx="-80" cy="35" r="6" fill="#DFCA95" />
+    <circle cx="-40" cy="43" r="6" fill="#DFCA95" />
+    <circle cx="0" cy="46" r="7" fill="#C6A15B" />
+    <circle cx="40" cy="43" r="6" fill="#DFCA95" />
+    <circle cx="80" cy="35" r="6" fill="#DFCA95" />
+    <circle cx="120" cy="20" r="6" fill="#DFCA95" />
+  </g>
+
+  <text x="400" y="525" text-anchor="middle" font-family="'Lora', serif" font-size="22" font-weight="bold" fill="#DFCA95" letter-spacing="2">
+    TAHFIDZUL QUR'AN 30 JUZ MUTQIN
+  </text>
+  <text x="400" y="555" text-anchor="middle" font-family="'Lora', serif" font-size="13" fill="#C6A15B" letter-spacing="3">
+    BIMBINGAN HUFFADZ BERSANAD RESMI
+  </text>
+</svg>

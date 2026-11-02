@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2E22" />
+      <stop offset="50%" stop-color="#14532D" />
+      <stop offset="100%" stop-color="#071F17" />
+    </linearGradient>
+    <pattern id="islamic-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M20 0 L40 20 L20 40 L0 20 Z" fill="none" stroke="#C6A15B" stroke-width="0.75" opacity="0.2"/>
+      <circle cx="20" cy="20" r="4" fill="none" stroke="#C6A15B" stroke-width="0.5" opacity="0.25"/>
+    </pattern>
+    <radialGradient id="gold-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C6A15B" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#C6A15B" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)" />
+  <rect width="800" height="600" fill="url(#islamic-grid)" />
+  <circle cx="400" cy="270" r="220" fill="url(#gold-glow)" />
+
+  <!-- Dome Silhouette -->
+  <g transform="translate(400, 260)" stroke="#C6A15B" stroke-width="2" fill="none" opacity="0.85">
+    <!-- Crescent on top -->
+    <path d="M0 -150 A15 15 0 1 1 0 -120 A11 11 0 1 0 0 -150 Z" fill="#C6A15B" stroke="none" />
+    <line x1="0" y1="-120" x2="0" y2="-90" stroke-width="3" />
+    <!-- Main Dome -->
+    <path d="M-110 40 C-110 -70 -20 -90 0 -90 C20 -90 110 -70 110 40 Z" fill="#071F17" opacity="0.6" stroke-width="2.5" />
+    <!-- Arch detail -->
+    <path d="M-60 40 C-60 -20 0 -35 0 -35 C0 -35 60 -20 60 40" stroke-width="1.5" stroke-dasharray="3,3" />
+    <!-- Minarets -->
+    <line x1="-160" y1="40" x2="-160" y2="-70" stroke-width="3" />
+    <polygon points="-160,-90 -168,-70 -152,-70" fill="#C6A15B" stroke="none" />
+    <line x1="160" y1="40" x2="160" y2="-70" stroke-width="3" />
+    <polygon points="160,-90 152,-70 168,-70" fill="#C6A15B" stroke="none" />
+  </g>
+
+  <!-- Islamic Book / Quran Stand -->
+  <g transform="translate(400, 390)" stroke="#C6A15B" stroke-width="2" fill="none">
+    <!-- Stand -->
+    <path d="M-70 70 L0 10 L70 70" stroke-width="4" stroke="#C6A15B" stroke-linecap="round" />
+    <path d="M-70 10 L0 70 L70 10" stroke-width="4" stroke="#C6A15B" stroke-linecap="round" />
+    <!-- Open Book -->
+    <path d="M-80 -20 Q-40 0 0 -20 Q40 0 80 -20 L75 30 Q40 45 0 30 Q-40 45 -75 30 Z" fill="#F8F6EF" stroke="#C6A15B" stroke-width="2" />
+    <line x1="0" y1="-20" x2="0" y2="30" stroke="#0B2E22" stroke-width="2" />
+    <line x1="-60" y1="-5" x2="-15" y2="-5" stroke="#14532D" stroke-width="1.5" opacity="0.6" />
+    <line x1="-60" y1="8" x2="-15" y2="8" stroke="#14532D" stroke-width="1.5" opacity="0.6" />
+    <line x1="-60" y1="20" x2="-25" y2="20" stroke="#14532D" stroke-width="1.5" opacity="0.6" />
+    <line x1="15" y1="-5" x2="60" y2="-5" stroke="#14532D" stroke-width="1.5" opacity="0.6" />
+    <line x1="15" y1="8" x2="60" y2="8" stroke="#14532D" stroke-width="1.5" opacity="0.6" />
+    <line x1="25" y1="20" x2="60" y2="20" stroke="#14532D" stroke-width="1.5" opacity="0.6" />
+  </g>
+
+  <!-- Elegant Islamic Text -->
+  <text x="400" y="520" text-anchor="middle" font-family="'Lora', serif" font-size="24" font-weight="bold" fill="#DFCA95" letter-spacing="2">
+    PONDOK PESANTREN DARUT TAUHID
+  </text>
+  <text x="400" y="550" text-anchor="middle" font-family="'Lora', serif" font-size="14" fill="#C6A15B" letter-spacing="4">
+    ASSALAFIYAH • MENJAGA TRADISI SALAF
+  </text>
+</svg>
