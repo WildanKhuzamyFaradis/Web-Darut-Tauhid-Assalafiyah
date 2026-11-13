@@ -10,7 +10,6 @@ import {
   ChevronRight, 
   ArrowRight, 
   Award, 
-  Sparkles, 
   Users, 
   ScrollText, 
   PhoneCall,
@@ -40,73 +39,18 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* 1. HERO SECTION */}
-      <section className="relative min-h-[580px] lg:min-h-[660px] flex items-center bg-[#071F17] text-white overflow-hidden border-b-2 border-[#C6A15B]">
-        {/* Background Image with Deep Green Gradient Overlay */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25 scale-105 transition-transform duration-1000"
-          style={{
-            backgroundImage: `url('/images/hero-pondok.svg')`,
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#051812] via-[#0B2E22]/95 to-[#071F17]/90" />
-        <div className="absolute inset-0 pattern-islamic opacity-25 pointer-events-none" />
-
-        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 md:pb-32 lg:pt-16 lg:pb-36 z-10 grid grid-cols-1 lg:grid-cols-2 gap-9 lg:gap-12 items-center">
-          <HeroSlideshow />
-          <div className="max-w-3xl min-w-0">
-            {/* Tagline Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/90 border border-[#C6A15B]/70 text-xs sm:text-sm text-[#DFCA95] font-medium mb-6 shadow-md backdrop-blur-md">
-              <Sparkles className="w-4 h-4 text-[#C6A15B]" />
-              <span>Pondok Pesantren Salafiyah Ahlussunnah wal Jama'ah</span>
+      {/* 1. FULL-WIDTH HERO SLIDESHOW */}
+      <HeroSlideshow description={siteData.description} />
+      <div className="hero-stats" aria-label="Pesantren dalam angka">
+        <div className="hero-stats__inner">
+          {siteData.stats.map((stat, idx) => (
+            <div key={idx} className="hero-stats__item">
+              <strong>{stat.value}</strong>
+              <span>{stat.label}</span>
             </div>
-
-            {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-5xl font-bold tracking-tight text-white font-serif-title leading-tight mb-6">
-              Menjaga Tradisi, <br />
-              <span className="text-[#DFCA95]">Menebar Cahaya Ilmu</span>
-            </h1>
-
-            {/* Sub-headline */}
-            <p className="text-base sm:text-lg text-emerald-100/90 leading-relaxed mb-8 max-w-2xl font-normal">
-              {siteData.description}
-            </p>
-
-            {/* Call to Actions */}
-            <div className="flex flex-wrap items-center gap-4">
-              <Link
-                href="/profil"
-                className="inline-flex items-center gap-2.5 bg-[#14532D] hover:bg-emerald-700 text-white font-medium px-6 py-3.5 rounded-md border border-[#C6A15B] shadow-lg transition duration-200 hover:-translate-y-0.5 cursor-pointer"
-              >
-                <span>Mengenal Pesantren</span>
-                <ArrowRight className="w-4 h-4 text-[#C6A15B]" />
-              </Link>
-              <Link
-                href="/kegiatan"
-                className="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3.5 rounded-md border border-white/20 backdrop-blur-sm transition duration-200 cursor-pointer"
-              >
-                <span>Jadwal Pengajian & Agenda</span>
-                <Calendar className="w-4 h-4 text-[#DFCA95]" />
-              </Link>
-            </div>
-          </div>
+          ))}
         </div>
-
-        {/* Stats Strip */}
-        <div className="absolute bottom-0 inset-x-0 bg-[#071F17]/90 border-t border-[#C6A15B]/30 backdrop-blur-md hidden md:block">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div className="grid grid-cols-4 divide-x divide-emerald-800/60 text-center">
-              {siteData.stats.map((stat, idx) => (
-                <div key={idx} className="px-4">
-                  <div className="text-2xl font-bold text-[#DFCA95] font-serif-title">{stat.value}</div>
-                  <div className="text-xs text-emerald-200/80 uppercase tracking-wider mt-0.5">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
+      </div>
       {/* 2. SAMBUTAN PENGASUH */}
       <section className="py-16 sm:py-24 bg-[#F8F6EF] border-b border-[#C6A15B]/20 relative">
         <div className="absolute inset-0 pattern-islamic-light opacity-30 pointer-events-none" />
@@ -571,4 +515,3 @@ export default function HomePage() {
     </div>
   );
 }
-
