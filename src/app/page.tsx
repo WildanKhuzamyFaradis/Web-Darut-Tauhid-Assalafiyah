@@ -19,6 +19,7 @@ import {
   Eye,
   X
 } from "lucide-react";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import SectionHeader from "@/components/SectionHeader";
 import { useCms } from "@/lib/CmsContext";
 import { GalleryItem } from "@/data/mockData";
@@ -51,8 +52,9 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#051812] via-[#0B2E22]/95 to-[#071F17]/90" />
         <div className="absolute inset-0 pattern-islamic opacity-25 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 z-10">
-          <div className="max-w-3xl">
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 md:pb-32 lg:pt-16 lg:pb-36 z-10 grid grid-cols-1 lg:grid-cols-2 gap-9 lg:gap-12 items-center">
+          <HeroSlideshow />
+          <div className="max-w-3xl min-w-0">
             {/* Tagline Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/90 border border-[#C6A15B]/70 text-xs sm:text-sm text-[#DFCA95] font-medium mb-6 shadow-md backdrop-blur-md">
               <Sparkles className="w-4 h-4 text-[#C6A15B]" />
@@ -60,7 +62,7 @@ export default function HomePage() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white font-serif-title leading-tight mb-6">
+            <h1 className="text-3xl sm:text-5xl lg:text-5xl font-bold tracking-tight text-white font-serif-title leading-tight mb-6">
               Menjaga Tradisi, <br />
               <span className="text-[#DFCA95]">Menebar Cahaya Ilmu</span>
             </h1>
@@ -569,3 +571,4 @@ export default function HomePage() {
     </div>
   );
 }
+
